@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Création du formulaires (HTML)-->
+    <!-- Style (CSS) -->
+    <!-- Validations des inputs 1 à 1-->
+
+    <div class="box-login">
+
+        <h2>Inscrivez-vous</h2>
+
+        <form>
+
+            <div class="form-group">
+                <label for="user">Nom d'utilisateur</label>
+                <input type="text" id="user" placeholder="Nom d'utilisateur ..." maxlength="24">
+                <img src="/ressources/check.svg" alt="icône de Validation" class="icon-verif">
+                <span class="message-alert">Choississez un pseudo compris entre 3 et 24 caractères</span>
+            </div>
+
+            <div class="form-group">
+                <label for="mail">Entrez votre adresse mail</label>
+                <input type="email" id="mail" placeholder="Votre adresse mail ..." maxlength="27">
+                <img src="/ressources/check.svg" alt="icône de Validation" class="icon-verif">
+                <span class="message-alert">Entrez une adresse mail valide</span>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Mot de passe</label>
+                <input type="password" id="pass" placeholder="Mot de passe ..." maxlength="24">
+                <img src="/ressources/check.svg" alt="icône de Validation" class="icon-verif">
+                <span class="message-alert">Un symbole, une lettre minuscule et un chiffres.</span>
+                <div class="ligne">
+                    <div class="l1"><span>Faible</span></div>
+                    <div class="l2"><span>Moyen</span></div>
+                    <div class="l3"><span>Fort</span></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="passconf">Confirmer votre mot de passe</label>
+                <input type="password" id="passconf" placeholder="Confirmez votre mot de passe" maxlength="24">
+                <img src="/ressources/check.svg" alt="icône de Validation" class="icon-verif">
+            </div>
+
+            <button type="submit">Création de mon compte</button>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
